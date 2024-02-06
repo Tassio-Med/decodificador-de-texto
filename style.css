@@ -65,8 +65,7 @@ textarea {
   line-height: 48px;
   letter-spacing: 0em;
   text-align: left;
-
-
+  resize: none;
 }
 
 #btn-and-alert {
@@ -87,7 +86,6 @@ textarea {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: center;
-  font-family: Inter;
   padding: 0 24px;
   border-radius: 24px;
   gap: 8px;
@@ -131,10 +129,6 @@ textarea {
   }
 }
 
-#mensagem {
-  resize: none;
-}
-
 
 section {
   background-color:#FFFFFF;
@@ -167,7 +161,4 @@ section {
   width: 70%;
 }
 
-#garoto-lupa {
-  width: 336px;
-  height: 304px;
-}
+
