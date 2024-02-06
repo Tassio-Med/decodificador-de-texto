@@ -1,4 +1,173 @@
-#teste {
-  background-color: blue;
-  color: white;
+@font-face {
+  font-family: Inter;
+  src: url('public/font/Inter/Inter.ttf');
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#F3F5FC;
+}
+
+#page {
+  width: 100%;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#img-container {
+  height: 100%;
+  margin: 0;
+}
+
+#componente {
+  margin: 20px;
+  display: flex;
+}
+
+
+#text-component {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+}
+
+#text-and-btn {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Inter;
+  padding-top: 20px;
+}
+
+textarea {
+  background-color: #F3F5FC;
+  color: #0A3871;
+  border: none;
+  outline: none; 
+  height: 60%;
+  width: 90%;
+  margin-top: 50px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
+}
+
+#btn-and-alert {
+  width: 100%;
+}
+
+#btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.default-btn {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: Inter;
+  padding: 0 24px;
+  border-radius: 24px;
+  gap: 8px;
+  width: 45%;
+  height: 65px;
+  border-radius: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.criptografar-btn {
+  color: #FFFFFF;
+  background: #0A3871;
+  border-style: inherit;
+}
+.criptografar-btn:hover {
+  background: #062448;
+}
+
+.descriptografar-btn {
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+}
+.descriptografar-btn:hover {
+  background: #83888d;
+}
+
+#alert {
+  display: flex;
+  p {
+    color: #495057;
+    margin-left: 5px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+#mensagem {
+  resize: none;
+}
+
+
+section {
+  background-color:#FFFFFF;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  height: 90vh;
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0px 24px 32px -8px #00000014;
+
+}
+
+#image-container {
+  width: 70%;
+  overflow: hidden;
+
+  img {
+    max-width: 85%;
+    height: auto; 
+    display: block;
+  }
+}
+
+#alert-mensagem {
+  text-align: center;
+  width: 70%;
+}
+
+#garoto-lupa {
+  width: 336px;
+  height: 304px;
 }

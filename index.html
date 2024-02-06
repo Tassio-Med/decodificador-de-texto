@@ -8,6 +8,39 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <h1 id="teste">HELLO WORD!</h1>
+  <div id="page">
+    <div id="componente">
+      <div id="img-container">
+        <img id="logo" src="./images/logo-alura.svg" alt="Logotipo da Alura">
+      </div>
+      <div id="text-component">
+        <div id="text-and-btn">
+          <textarea id="mensagem" name="mensagem" rows="4" cols="50">
+            Digite seu texto aqui
+          </textarea>
+          <div id="btn-and-alert">
+            <div id="alert">
+              <img src="./images/alert.svg" alt="Símbolo de alerta">
+              <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div id="btn-container">
+              <button class="criptografar-btn default-btn">Criptografar</button>
+              <button class="descriptografar-btn default-btn">Descriptografar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div id="image-container">
+          <img src="./images/garoto-lupa.svg" alt="Imagem de um persona com uma lupa" id="garoto-lupa">
+        </div>
+        <span id="alert-mensagem">
+          <h3>Nenhuma mensagem encontrada</h3>
+          <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </span>
+      </section>
+    </div>
+
+  </div>
 </body>
 </html>
