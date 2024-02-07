@@ -145,9 +145,11 @@ section {
   justify-content: center;
   font-family: Inter;
   height: 90vh;
+  width: 30%;
   margin: 0;
   padding: 10px;
   box-shadow: 0px 24px 32px -8px #00000014;
+  overflow: hidden;
 }
 
 #no-message{
@@ -175,22 +177,30 @@ section {
 
 
 #mensagem-container {
-  max-width: 90%;
+  padding: 20px;
   height: 100%;
-  padding: 10px 10px 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #062448; */
+  overflow: hidden;
 }
 
 #mensagem-criptografada {
-  background-color: green;
+  padding: 30px 10px 10px 10px;
+  word-wrap: break-word; 
+  color: #0A3871;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+
 }
 
 .copy-btn {
-  width: 50%;
+  width: 100%;
   background: #D8DFE8;
   border: 1px solid #0A3871;
 }
