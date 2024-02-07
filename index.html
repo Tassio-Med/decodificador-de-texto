@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Decodificador</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div id="page">
@@ -15,17 +16,15 @@
       </div>
       <div id="text-component">
         <div id="text-and-btn">
-          <textarea name="mensagem" rows="4" cols="50">
-            Digite seu texto aqui
-          </textarea>
+          <textarea id="message" name="mensagem" rows="4" cols="50" placeholder="Digite seu texto aqui"></textarea>
           <div id="btn-and-alert">
             <div id="alert">
               <img src="./images/alert.svg" alt="Símbolo de alerta">
               <p>Apenas letras minúsculas e sem acento.</p>
             </div>
             <div id="btn-container">
-              <button class="criptografar-btn default-btn">Criptografar</button>
-              <button class="descriptografar-btn default-btn">Descriptografar</button>
+              <button class="criptografar-btn default-btn" onclick="criptografar()">Criptografar</button>
+              <button class="descriptografar-btn default-btn" onclick="descriptografar()">Descriptografar</button>
             </div>
           </div>
         </div>
@@ -40,6 +39,7 @@
             <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
           </span>
         </div>
+        <div id="mensagem-criptografada"></div>
       </section>
     </div>
 
