@@ -60,7 +60,7 @@ function descriptografar() {
       let imageContainer = document.createElement("div");
       imageContainer.id = "image-container";
       let img = document.createElement("img");
-      img.src = "./images/garoto-lupa.svg";
+      img.src = "./assets/images/garoto-lupa.svg";
       img.alt = "Imagem de um persona com uma lupa";
       img.id = "garoto-lupa";
       imageContainer.appendChild(img);
