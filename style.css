@@ -115,8 +115,8 @@ textarea::placeholder {
 
 .descriptografar-btn {
   width: 45%;
-  background: #D8DFE8;
   border: 1px solid #0A3871;
+  background-color: transparent;
 }
 .descriptografar-btn:hover {
   background: #83888d;
@@ -157,6 +157,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 #image-container {
@@ -179,6 +180,7 @@ section {
 #mensagem-container {
   padding: 20px;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,14 +198,311 @@ section {
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
+  overflow: auto;
 
 }
 
 .copy-btn {
   width: 100%;
-  background: #D8DFE8;
+  background: transparent;
   border: 1px solid #0A3871;
 }
 .copy-btn:hover {
   background: #83888d;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  #page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  
+  #componente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    overflow: hidden;
+  }
+
+  #img-container {
+    height: auto;
+    width: 100%;
+  }
+  
+  #text-component {
+    width: 90%;
+    height: 100%;
+  }
+
+  #text-and-btn {
+    width: 100%;
+    height: 53vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+  }
+  
+  textarea {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: none;
+    outline: none; 
+    width: 100%;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    resize: none;
+    margin: 0;
+  }
+  
+  textarea::placeholder {
+    color: #0A3871;
+  }
+  
+  #btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+  }
+
+  section {
+    width: 100%;
+    height: 30vh;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    overflow: hidden;
+  }
+
+
+  #mensagem-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #no-message {
+    width: 100%;
+
+    h3{
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    p{
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+
+  #mensagem-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #mensagem-criptografada {
+    overflow: auto;
+    height: 50%;
+    margin-bottom: 10px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  
+  #image-container {
+    width: 100%;
+    img {
+      display: none;
+    }
+  }
+
+  .copy-btn {
+    height: 30%;
+    border-radius: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  
+  #page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  #componente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    overflow: hidden;
+  }
+
+  #img-container {
+    height: auto;
+    width: 100%;
+  }
+  
+  #text-component {
+    width: 90%;
+    height: 100%;
+  }
+
+  #text-and-btn {
+    width: 100%;
+    height: 53vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+  }
+  
+  textarea {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: none;
+    outline: none; 
+    width: 100%;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    resize: none;
+    margin: 0;
+  }
+  
+  textarea::placeholder {
+    color: #0A3871;
+  }
+  
+
+  #btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+  }
+
+  .default-btn{
+    width: 100%;
+  }
+
+  .descriptografar-btn{
+    margin-top: 20px;
+  }
+
+  section {
+    width: 90%;
+    height: 30vh;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    overflow: hidden;
+  }
+
+
+  #no-message {
+    width: 100%;
+
+    h3{
+      width: 100%;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    p{
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+
+  #mensagem-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #mensagem-criptografada {
+    overflow: auto;
+    height: 50%;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  
+  #image-container {
+    width: 100%;
+    img {
+      display: none;
+    }
+  }
+
+  .copy-btn {
+    height: 30%;
+    border-radius: 16px;
+  }
 }
